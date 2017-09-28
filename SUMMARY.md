@@ -23,21 +23,16 @@
 * [冒泡排序](/mao-pao-pai-xu.md)
 * [数组去重](shu-zu-qu-zhong.md)
 
-## 性能
-
-* [重绘与重排](xing-neng/zhong-hui-yu-zhong-pai.md)
-
 ## HTTP
 
 * ajax实现
 * jsonp实现
 
+## 性能
+
+* [重绘与重排](xing-neng/zhong-hui-yu-zhong-pai.md)
+
 ## 浏览器兼容
-
-## 工程化工具
-
-* webpack是什么？
-* webpack的原理
 
 ## 框架
 
@@ -45,6 +40,11 @@
 * vue的核心概念
 * angular的核心概念
 * react的核心概念
+
+## 工程化工具
+
+* webpack是什么？
+* webpack的原理
 
 ## 其他
 

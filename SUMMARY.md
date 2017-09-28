@@ -21,3 +21,7 @@
 * [冒泡排序](/mao-pao-pai-xu.md)
 * [数组去重](shu-zu-qu-zhong.md)
 
+## 性能
+
+* [重绘与重排](xing-neng/zhong-hui-yu-zhong-pai.md)
+

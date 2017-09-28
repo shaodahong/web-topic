@@ -13,10 +13,16 @@
 * [垂直居中](css/chui-zhi-ju-zhong.md)
 * [水平居中](css/shui-ping-ju-zhong.md)
 * [盒子模型](css/he-zi-mo-xing.md)
+* FLEX布局
 
 ## JS
 
 * [bind实现](js/bindshi-xian.md)
+* 原型链
+* 深拷贝实现
+* 函数柯里化
+* JS模块化
+* XSS是什么
 
 ## 算法
 
@@ -27,6 +33,11 @@
 
 * ajax实现
 * jsonp实现
+* https是什么
+
+## 设计模式
+
+* 观察者模式
 
 ## 性能
 

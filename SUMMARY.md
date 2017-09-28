@@ -8,10 +8,12 @@
 
 ## CSS
 
-* 垂直居中
-* 水平居中
+* [垂直居中](css/chui-zhi-ju-zhong.md)
+* [水平居中](css/shui-ping-ju-zhong.md)
 
 ## JS
+
+* [bind实现](js/bindshi-xian.md)
 
 ## 算法
 

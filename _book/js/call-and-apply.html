@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HTML5 API · WEB_TOPIC</title>
+        <title>call和apply · WEB_TOPIC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../css/chui-zhi-ju-zhong.html" />
+    <link rel="next" href="../mao-pao-pai-xu.html" />
     
-    
-    <link rel="prev" href="../" />
     
 
     <style>
@@ -135,9 +133,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="html5biao-qian.html">
+        <li class="chapter " data-level="2.1" data-path="../html/html5biao-qian.html">
             
-                <a href="html5biao-qian.html">
+                <a href="../html/html5biao-qian.html">
             
                     
                     HTML5 API
@@ -214,9 +212,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../js/bindshi-xian.html">
+        <li class="chapter " data-level="4.1" data-path="bindshi-xian.html">
             
-                <a href="../js/bindshi-xian.html">
+                <a href="bindshi-xian.html">
             
                     
                     bind实现
@@ -318,9 +316,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.9" data-path="../js/call-and-apply.html">
+        <li class="chapter active" data-level="4.9" data-path="call-and-apply.html">
             
-                <a href="../js/call-and-apply.html">
+                <a href="call-and-apply.html">
             
                     
                     call和apply
@@ -905,7 +903,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >HTML5 API</a>
+        <a href=".." >call和apply</a>
     </h1>
 </div>
 
@@ -920,41 +918,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html5-api">HTML5 API</h1>
-<h2 id="canvas">canvas</h2>
-<p>canvas&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x901A;&#x8FC7;js&#x6765;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#xFF0C;&#x5982;&#x679C;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;canvas&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x5305;&#x88F9;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5185;&#x5BB9;&#x6765;&#x544A;&#x8BC9;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;</p>
-<h2 id="audio&#x548C;video">Audio&#x548C;Video</h2>
-<p>Audio&#x548C;Video&#x4E00;&#x822C;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x8BA8;&#x8BBA;</p>
-<h2 id="geolocation">Geolocation</h2>
-<h2 id="websocket">WebSocket</h2>
-<h2 id="web-storage">Web Storage</h2>
-<h2 id="communication">Communication</h2>
-<h2 id="web-workers">Web Workers</h2>
-<h2 id="requestanimationframe">requestAnimationFrame</h2>
-<hr>
-<p>&#x6765;&#x6E90;&#x53C2;&#x8003;&#xFF1A;</p>
-<p><a href="http://jartto.wang/2016/07/25/make-an-inventory-of-html5-api/" target="_blank">HTML5 API&#x5927;&#x76D8;&#x70B9;</a></p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" target="_blank">&lt;canvas&gt;</a></p>
-<p>&#x8D21;&#x732E;&#x8005;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"><a href="https://github.com/shaodahong/web-topic" target="_blank">shaodahong</a></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
+                                <h1 id="all&#x548C;apply">all&#x548C;apply</h1>
+<pre class="language-"><code class="lang-js">fn<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>isThis<span class="token punctuation">,</span> arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-js">fn<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>isThis<span class="token punctuation">,</span> <span class="token punctuation">[</span>arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x76F8;&#x540C;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x6539;&#x53D8;this&#x6307;&#x5411;</li>
+<li>&#x53EF;&#x4EE5;&#x4F20;&#x53C2;</li>
+<li>&#x7ACB;&#x5373;&#x8C03;&#x7528;</li>
+</ol>
+<p>&#x533A;&#x522B;&#xFF1A;</p>
+<ol>
+<li>apply&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x53C2;&#x6570;&#xFF0C;call&#x76F4;&#x63A5;&#x63A5;&#x6536;&#x53C2;&#x6570;</li>
+<li>apply&#x7684;&#x6027;&#x80FD;&#x4F1A;&#x6BD4;call&#x5DEE;&#xFF0C;&#x56E0;&#x4E3A;&#x8981;&#x5BF9;&#x6570;&#x7EC4;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x548C;&#x89E3;&#x6784;&#xFF0C;&#x4F46;&#x662F;&#x6027;&#x80FD;&#x7684;&#x5DEE;&#x8DDD;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x8BA1;&#x3002;&#x5728;&#x6709;&#x4E9B;&#x573A;&#x666F;&#x4E0B;apply&#x662F;&#x6BD4;call&#x66F4;&#x597D;&#x7528;&#x7684;</li>
+</ol>
+<p>&#x6A21;&#x62DF;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>callLike <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>isThis<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    isThis <span class="token operator">=</span> isThis <span class="token operator">||</span> window<span class="token punctuation">;</span>
+    isThis<span class="token punctuation">.</span>fn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> l <span class="token operator">=</span> arguments<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        args<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">&apos;isThis.fn(&apos;</span> <span class="token operator">+</span> args<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos;)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">delete</span> isThis<span class="token punctuation">.</span>fn<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-js">Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>applyLike <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>isThis<span class="token punctuation">,</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    isThis <span class="token operator">=</span> isThis <span class="token operator">||</span> window<span class="token punctuation">;</span>
+    isThis<span class="token punctuation">.</span>fn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">&apos;isThis.fn(&apos;</span> <span class="token operator">+</span> args<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos;)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">delete</span> isThis<span class="token punctuation">.</span>fn<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; shaodahong 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2017-10-01 11:56:21
+2017-10-01 16:36:59
 </span></footer>
                                 
                                 </section>
@@ -982,12 +984,8 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 前言">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="../css/chui-zhi-ju-zhong.html" class="navigation navigation-next " aria-label="Next page: 垂直居中">
+                <a href="../mao-pao-pai-xu.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 冒泡排序">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -998,7 +996,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML5 API","level":"2.1","depth":1,"next":{"title":"垂直居中","level":"3.1","depth":1,"path":"css/chui-zhi-ju-zhong.md","ref":"css/chui-zhi-ju-zhong.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["editlink","github","disqus","sitemap","prism","-highlight","github-buttons","tbfed-pagefooter","codeblock-filename","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy shaodahong 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"web-topic"},"github":{"url":"https://github.com/shaodahong/web-topic"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/shaodahong/web-topic/blob/master/"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"codeblock-filename":{},"sitemap":{"hostname":"http://web-topic.baiya.me/"},"github-buttons":{"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shaodahong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WEB_TOPIC","language":"zh-hans","gitbook":"*","description":"前端面试题目合集"},"file":{"path":"html/html5biao-qian.md","mtime":"2017-10-01T03:56:21.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-01T06:37:30.073Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"call和apply","level":"4.9","depth":1,"next":{"title":"冒泡排序","level":"5.1","depth":1,"path":"mao-pao-pai-xu.md","ref":"mao-pao-pai-xu.md","articles":[]},"previous":{"title":"浮动和清除浮动","level":"4.8","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["editlink","github","disqus","sitemap","prism","-highlight","github-buttons","tbfed-pagefooter","codeblock-filename","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy shaodahong 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"web-topic"},"github":{"url":"https://github.com/shaodahong/web-topic"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/shaodahong/web-topic/blob/master/"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"codeblock-filename":{},"sitemap":{"hostname":"http://web-topic.baiya.me/"},"github-buttons":{"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shaodahong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WEB_TOPIC","language":"zh-hans","gitbook":"*","description":"前端面试题目合集"},"file":{"path":"js/call-and-apply.md","mtime":"2017-10-01T08:36:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-01T06:37:30.073Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

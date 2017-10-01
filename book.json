@@ -1,7 +1,8 @@
 {
     "title": "WEB_TOPIC",
     "description": "前端面试题目合集",
-    "language": "zh",
+    "author" : "shaodahong",
+    "language": "zh-hans",
     "plugins": [
         "editlink",
         "github",
@@ -9,7 +10,9 @@
         "sitemap",
         "prism",
         "-highlight",
-        "github-buttons"
+        "github-buttons",
+        "tbfed-pagefooter",
+        "codeblock-filename"
     ],
     "pluginsConfig": {
         "editlink": {
@@ -38,6 +41,11 @@
                 "fork"
             ],
             "size": "small"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy shaodahong 2017",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }

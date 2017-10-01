@@ -25,6 +25,7 @@
 * 事件模型
 * 继承
 * 浮动和清除浮动
+* [call和apply](js/call-and-apply.md)
 
 ## 算法
 

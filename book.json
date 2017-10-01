@@ -1,0 +1,43 @@
+{
+    "title": "WEB_TOPIC",
+    "description": "前端面试题目合集",
+    "language": "zh",
+    "plugins": [
+        "editlink",
+        "github",
+        "disqus",
+        "sitemap",
+        "prism",
+        "-highlight",
+        "github-buttons"
+    ],
+    "pluginsConfig": {
+        "editlink": {
+            "base": "https://github.com/shaodahong/web-topic/blob/master/",
+            "label": "编辑本页"
+        },
+        "github": {
+            "url": "https://github.com/shaodahong/web-topic"
+        },
+        "disqus": {
+            "shortName": "web-topic"
+        },
+        "sitemap": {
+            "hostname": "http://web-topic.baiya.me/"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
+        },
+        "github-buttons": {
+            "repo": "shaodahong/web-topic",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        }
+    }
+}

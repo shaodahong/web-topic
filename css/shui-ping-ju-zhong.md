@@ -12,7 +12,7 @@ html:
 1. 利用 text-align 的特性设置
 
 ```css
-.fatcher {
+.father {
     text-align: center;
 }
 ```
@@ -23,7 +23,7 @@ html:
 1. 利用 `margin: 0 auto;` 的特性设置
 
 ```css
-.fatcher {
+.father {
     margin: 0 auto;
 }
 ```

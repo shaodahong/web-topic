@@ -12,7 +12,7 @@ html:
 1. 利用 table 的特性设置 vertical-align 为 middle
 
 ```css
-.fatcher {
+.father {
     display: table-cell;
     vertical-align: middle;
 }

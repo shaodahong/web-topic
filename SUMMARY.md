@@ -13,11 +13,11 @@
 * [垂直居中](css/chui-zhi-ju-zhong.md)
 * [水平居中](css/shui-ping-ju-zhong.md)
 * [盒子模型](css/he-zi-mo-xing.md)
-* FLEX布局
+* [FLEX布局](css/flex-bu-ju.md)
 
 ## JS
 
-* [bind实现](js/bindshi-xian.md)
+* [bind实现](js/bind-shi-xian.md)
 * 原型链
 * 深拷贝实现
 * 函数柯里化

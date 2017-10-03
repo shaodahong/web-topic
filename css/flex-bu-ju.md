@@ -4,7 +4,7 @@
     <img src="../assets/flexbox.png" />
 </p>
 
-网页布局是每个前端开发人员都会面对的，传统的布局方式我们往往会采用 `display` `position` `float` 这些 css 属性，但是面对日益增多且尺寸差异明显的移动设备上，我们发现这些 css 属性给我们带来了很多破坏性的问题，玩玩有些用户的手机上布局是好的，但是另外一些确是坏的，所以 flex 布局也呼之既出
+网页布局是每个前端开发人员都会面对的，传统的布局方式我们往往会采用 `display` `position` `float` 这些 css 属性，但是面对日益增多且尺寸差异明显的移动设备上，我们发现这些 css 属性给我们带来了很多破坏性的问题，玩玩有些用户的手机上布局是好的，但是另外一些却是坏的，所以 flex 布局也呼之既出
 
 flex 布局也叫 **弹性布局**，体现在它能够自动的伸缩来适应不同的页面尺寸，比如我们要完成这样一个布局：
 
@@ -26,11 +26,12 @@ html:
 css:
 ```css
 .father {
-  border: 1px solid red;
+  background-color: #b3b3b3;
   display: flex;
 }
 .father > div {
-  border: 1px solid blue;
+  background-color: #1C90F3;
+  color: #fff;
   height: 100px;
   width: 100px;
   flex: 1;
@@ -53,6 +54,12 @@ css:
 ```
 
 flex 也可以让我们来设定布局的方向
+
 ```css
 flex-direction: row | row-reverse | column | column-reverse
 ```
+默认是水平从左到右来排列，但是也可以垂直排列，这样的布局方式给我们带来了很大的便利性
+
+<p align="center">
+    <img src="../assets/flex3.png" />
+</p>

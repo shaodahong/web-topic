@@ -40,7 +40,7 @@ postMessage 给我们提供了跨页面跨源通信的能力
 
 [HTML5 API大盘点](http://jartto.wang/2016/07/25/make-an-inventory-of-html5-api/)
 
-[&lt;canvas&gt;](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas)
+[MDN &lt;canvas&gt;](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas)
 
 
 

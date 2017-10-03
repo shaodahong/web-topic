@@ -18,6 +18,7 @@
 ## JS
 
 * [bind实现](js/bind-shi-xian.md)
+* [闭包](js/bi-bao.md)
 * 原型链
 * 深拷贝实现
 * 函数柯里化

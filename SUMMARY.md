@@ -18,6 +18,7 @@
 ## JS
 
 * [bind实现](js/bind-shi-xian.md)
+* [作用域](js/zuo-yong-yu.md)
 * [闭包](js/bi-bao.md)
 * 原型链
 * 深拷贝实现

@@ -17,7 +17,6 @@
 
 ## JS
 
-* [bind实现](js/bind-shi-xian.md)
 * [作用域](js/zuo-yong-yu.md)
 * [闭包](js/bi-bao.md)
 * 原型链
@@ -28,6 +27,7 @@
 * 继承
 * 浮动和清除浮动
 * [call和apply](js/call-and-apply.md)
+* [bind实现](js/bind-shi-xian.md)
 
 ## 算法
 

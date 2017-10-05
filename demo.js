@@ -1,34 +1,25 @@
-Function.prototype.bindLike = function (isThis) {
-    isThis  = isThis || window;
-    var that = this;
-    var args = Array.prototype.slice.call(arguments, 1);
-
-    var fnOP = function() {};
-
-    var fn =  function () {
-        return that.apply(this instanceof fn ? this : isThis, args.concat(Array.prototype.slice.call(arguments)))
+function fn() {
+    var a = 1;
+    function fnOne() {
+        console.log(a++);
     }
 
-    fnOP.prototype = this.prototype;
-    fn.prototype = new fnOP();
-
-    return fn;
+    fnOne();
 }
 
-var obj = {
-    name: 'monkey',
-    age: 1
+function fnThree() {
+    var a = 1;
+    return function () {
+        console.log(a++);
+    }
 }
 
-var name = 'hello';
 
-function fn() {
-    console.log('arguments', arguments);
-    return this.name;
-}
+var result = fnThree();
 
-var bindFn = fn.bindLike(obj, name);
-
-console.log(1)
-
-console.log('result', new bindFn(2, 3))
+fn();
+fn();
+fn();
+result();
+result();
+result();

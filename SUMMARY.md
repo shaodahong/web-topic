@@ -19,8 +19,8 @@
 
 * [作用域](js/zuo-yong-yu.md)
 * [闭包](js/bi-bao.md)
-* 原型链
-* 深拷贝实现
+* [原型链](js/yuan-xing-lian.md)
+* [深拷贝实现](js/shen-kao-bei-shi-xian.md)
 * 函数柯里化
 * JS模块化
 * 事件模型

@@ -21,7 +21,7 @@
 * [闭包](js/bi-bao.md)
 * [原型链](js/yuan-xing-lian.md)
 * [深拷贝实现](js/shen-kao-bei-shi-xian.md)
-* 函数柯里化
+* [函数柯里化](js/han-shu-ke-li-hua.md)
 * JS模块化
 * 事件模型
 * 继承

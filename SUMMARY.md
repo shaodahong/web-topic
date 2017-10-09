@@ -14,6 +14,7 @@
 * [水平居中](css/shui-ping-ju-zhong.md)
 * [盒子模型](css/he-zi-mo-xing.md)
 * [FLEX布局](css/flex-bu-ju.md)
+* [浮动和清除浮动](css/fu-dong-he-qing-chu-fu-dong.md)
 
 ## JS
 
@@ -22,26 +23,25 @@
 * [原型链](js/yuan-xing-lian.md)
 * [深拷贝实现](js/shen-kao-bei-shi-xian.md)
 * [函数柯里化](js/han-shu-ke-li-hua.md)
-* JS模块化
-* 事件模型
-* 继承
-* 浮动和清除浮动
+* [JS模块化](js/js-mo-kuai-hua.md)
+* [事件模型](js/shi-jian-mo-xing.md)
+* [继承](js/ji-cheng.md)
 * [call和apply](js/call-and-apply.md)
 * [bind实现](js/bind-shi-xian.md)
 
 ## 算法
 
-* [冒泡排序](/mao-pao-pai-xu.md)
-* [数组去重](shu-zu-qu-zhong.md)
-* 选择排序
-* 插入排序
-* 希尔排序
-* 归并排序
-* 快速排序
-* 堆排序
-* 计数排序
-* 桶排序
-* 基数排序
+* [冒泡排序](suan-fa/mao-pao-pai-xu.md)
+* [数组去重](suan-fa/shu-zu-qu-zhong.md)
+* [选择排序](suan-fa/xuan-ze-pai-xu.md)
+* [插入排序](suan-fa/cha-ru-pai-xu.md)
+* [希尔排序](suan-fa/xi-er-pai-xu.md)
+* [归并排序](suan-fa/gui-bing-pai-xu.md)
+* [快速排序](suan-fa/kuai-su-pai-xu.md)
+* [堆排序](suan-fa/dui-pai-xu.md)
+* [计数排序](suan-fa/ji-shu-pai-xu.md)
+* [桶排序](suan-fa/tong-pai-xu.md)
+* [基数排序](suan-fa/ji-shu-pai-xu.md)
 
 ## HTTP
 
@@ -55,12 +55,13 @@
 
 ## 设计模式
 
-* 观察者模式
-* 单例模式
-* 适配器模式
-* 代理模式
-* 访问者模式
-* 工厂模式
+* [观察者模式](she-ji-mo-shi/guan-cha-zhe-mo-shi.md)
+* [单例模式](she-ji-mo-shi/dan-li-mo-shi.md)
+* [适配器模式](she-ji-mo-shi/shi-pei-qi-mo-shi.md)
+* [代理模式](she-ji-mo-shi/dai-li-mo-shi.md)
+* [访问者模式](she-ji-mo-shi/fang-wen-zhe-mo-shi.md)
+* [工厂模式](she-ji-mo-shi/gong-chang-mo-shi.md)
+* [订阅发布模式](she-ji-mo-shi/ding-yue-fa-bu-mo-shi.md)
 
 ## 性能
 

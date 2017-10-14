@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello world</title>
+</head>
+
+<body>
+    <button id="btn">按钮</button>
+</body>
+
+<script>
+    var btn = document.getElementById('btn');
+
+    btn.onclick = function () {
+        var request = new XMLHttpRequest();
+        console.log('request', request);
+
+        request.responseType = 'document';
+
+
+        request.open('GET', 'http://127.0.0.1:1024', true);
+        request.setRequestHeader('Content-Type', 'FormData');
+        request.setRequestHeader('X-Test', 'one');
+        request.setRequestHeader('X-Test', 'two');
+
+        request.onload = function () {
+            console.log(this);
+        }
+
+        request.send();
+    }
+</script>
+
+</html>

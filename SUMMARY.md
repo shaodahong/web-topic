@@ -45,7 +45,7 @@
 
 ## HTTP
 
-* ajax实现
+* [ajax实现](http/ajax-shi-xian.md)
 * jsonp实现
 * https是什么
 * 跨域的原理和实现

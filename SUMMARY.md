@@ -46,7 +46,7 @@
 ## HTTP
 
 * [ajax实现](http/ajax-shi-xian.md)
-* jsonp实现
+* [jsonp实现](http/jsonp-shi-xian.md)
 * https是什么
 * 跨域的原理和实现
 * 三次握手四次挥手

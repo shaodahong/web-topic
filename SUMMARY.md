@@ -73,7 +73,7 @@
 
 ## 安全
 
-* XSS是什么
+* [XSS是什么](an-quan/xss-shi-shen-me.md)
 
 ## 框架
 

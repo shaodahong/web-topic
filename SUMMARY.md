@@ -28,6 +28,7 @@
 * [继承](js/ji-cheng.md)
 * [call和apply](js/call-and-apply.md)
 * [bind实现](js/bind-shi-xian.md)
+* [trim实现](js/trim-shi-xian.md)
 
 ## 算法
 

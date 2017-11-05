@@ -18,6 +18,7 @@
 
 ## JS
 
+* [数据类型](js/shu-ju-lei-xing.md)
 * [作用域](js/zuo-yong-yu.md)
 * [闭包](js/bi-bao.md)
 * [原型链](js/yuan-xing-lian.md)

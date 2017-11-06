@@ -90,6 +90,18 @@ var result = eval('isThis.fn(' + args.join() + ')');
 
 使用 eval，得益于 eval 强大的能力，我们可以把字符串当做 js 代码来执行，并且可以得到返回值，完美
 
+但是这里会有一个问题，如果参数是个对象，那么 eval 对参数 toString 后我们我们就得不到想要的参数了，所以这里改造下，因为 eval 可以动态的改变作用域
+
+```js
+var args = [];
+for (var i = 1, l = arguments.length; i< l; i++) {
+    args.push('arguments[' + i  + ']');
+}
+var result = eval('isThis.fn(' + args.join() + ')');
+```
+
+这里我们用 args 存放着 arguments[1] arguments[1]... 这样的字符串，那么 eval 执行的时候会在上下文查找并绑定所需要的变量，这样就可以实现参数传递了
+
 完整代码：
 
 ```js
@@ -111,7 +123,7 @@ Function.prototype.callLike = function (isThis) {
 
     var args = [];
     for (var i = 1, l = arguments.length; i< l; i++) {
-        args.push(arguments[i]);
+        args.push('arguments[' + i  + ']');
     }
 
     var result = eval('isThis.fn(' + args.join() + ')');
@@ -141,6 +153,11 @@ Function.prototype.applyLike = function (isThis, args) {
     }
     
     isThis.fn = this;
+
+    var args = [];
+    for (var i = 1, l = arguments.length; i< l; i++) {
+        args.push('arguments[' + i  + ']');
+    }
     
     var result = eval('isThis.fn(' + args.join() + ')');
     delete isThis.fn;

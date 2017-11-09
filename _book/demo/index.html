@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea id="log" rows="20" cols="40"></textarea>
+    <input id="inp">
+    <script type="text/javascript">
+        var l = document.getElementById('log');
+        var i = document.getElementById('inp');
+        i.onblur = function () {
+            l.value += 'blur\n';
+        };
+        setTimeout(function () {
+            l.value += 'log in\n';
+            l.focus();
+            l.value += 'log out\n';
+        }, 100);
+        i.focus();
+    </script>
+</body>
+
+</html>

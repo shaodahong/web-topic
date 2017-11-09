@@ -1,0 +1,1131 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>深拷贝实现 · WEB_TOPIC</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="shaodahong">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="han-shu-ke-li-hua.md" />
+    
+    
+    <link rel="prev" href="yuan-xing-lian.md" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">导读</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">HTML</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../html/html5-api.html">
+            
+                <a href="../html/html5-api.html">
+            
+                    
+                    HTML5 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../css/chui-zhi-ju-zhong.html">
+            
+                <a href="../css/chui-zhi-ju-zhong.html">
+            
+                    
+                    垂直居中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../css/shui-ping-ju-zhong.html">
+            
+                <a href="../css/shui-ping-ju-zhong.html">
+            
+                    
+                    水平居中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../css/he-zi-mo-xing.html">
+            
+                <a href="../css/he-zi-mo-xing.html">
+            
+                    
+                    盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../css/flex-bu-ju.html">
+            
+                <a href="../css/flex-bu-ju.html">
+            
+                    
+                    FLEX布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../css/fu-dong-he-qing-chu-fu-dong.md">
+            
+                <span>
+            
+                    
+                    浮动和清除浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JS</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="zuo-yong-yu.html">
+            
+                <a href="zuo-yong-yu.html">
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="bi-bao.html">
+            
+                <a href="bi-bao.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="yuan-xing-lian.md">
+            
+                <span>
+            
+                    
+                    原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="shen-kao-bei-shi-xian.html">
+            
+                <a href="shen-kao-bei-shi-xian.html">
+            
+                    
+                    深拷贝实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="han-shu-ke-li-hua.md">
+            
+                <span>
+            
+                    
+                    函数柯里化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="js-mo-kuai-hua.md">
+            
+                <span>
+            
+                    
+                    JS模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="shi-jian-mo-xing.md">
+            
+                <span>
+            
+                    
+                    事件模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="ji-cheng.md">
+            
+                <span>
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="call-and-apply.html">
+            
+                <a href="call-and-apply.html">
+            
+                    
+                    call和apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="bind-shi-xian.html">
+            
+                <a href="bind-shi-xian.html">
+            
+                    
+                    bind实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">算法</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../suan-fa/mao-pao-pai-xu.html">
+            
+                <a href="../suan-fa/mao-pao-pai-xu.html">
+            
+                    
+                    冒泡排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../suan-fa/shu-zu-qu-zhong.html">
+            
+                <a href="../suan-fa/shu-zu-qu-zhong.html">
+            
+                    
+                    数组去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../suan-fa/xuan-ze-pai-xu.md">
+            
+                <span>
+            
+                    
+                    选择排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../suan-fa/cha-ru-pai-xu.md">
+            
+                <span>
+            
+                    
+                    插入排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../suan-fa/xi-er-pai-xu.md">
+            
+                <span>
+            
+                    
+                    希尔排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../suan-fa/gui-bing-pai-xu.md">
+            
+                <span>
+            
+                    
+                    归并排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../suan-fa/kuai-su-pai-xu.html">
+            
+                <a href="../suan-fa/kuai-su-pai-xu.html">
+            
+                    
+                    快速排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../suan-fa/dui-pai-xu.md">
+            
+                <span>
+            
+                    
+                    堆排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../suan-fa/ji-shu-pai-xu.md">
+            
+                <span>
+            
+                    
+                    计数排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../suan-fa/tong-pai-xu.md">
+            
+                <span>
+            
+                    
+                    桶排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../suan-fa/ji-shu-pai-xu.md">
+            
+                <span>
+            
+                    
+                    基数排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">HTTP</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    ajax实现
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <span>
+            
+                    
+                    jsonp实现
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" >
+            
+                <span>
+            
+                    
+                    https是什么
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" >
+            
+                <span>
+            
+                    
+                    跨域的原理和实现
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+                <span>
+            
+                    
+                    三次握手四次挥手
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <span>
+            
+                    
+                    TCP和UDP的区别
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+                <span>
+            
+                    
+                    什么是Etag？
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../http/liu-lan-qi-di-zhi-hui-che.html">
+            
+                <a href="../http/liu-lan-qi-di-zhi-hui-che.html">
+            
+                    
+                    当你在浏览器中输入 google.com 并且按下回车之后发生了什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">设计模式</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../she-ji-mo-shi/guan-cha-zhe-mo-shi.md">
+            
+                <span>
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../she-ji-mo-shi/dan-li-mo-shi.md">
+            
+                <span>
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../she-ji-mo-shi/shi-pei-qi-mo-shi.md">
+            
+                <span>
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../she-ji-mo-shi/dai-li-mo-shi.md">
+            
+                <span>
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../she-ji-mo-shi/fang-wen-zhe-mo-shi.md">
+            
+                <span>
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../she-ji-mo-shi/gong-chang-mo-shi.md">
+            
+                <span>
+            
+                    
+                    工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../she-ji-mo-shi/ding-yue-fa-bu-mo-shi.html">
+            
+                <a href="../she-ji-mo-shi/ding-yue-fa-bu-mo-shi.html">
+            
+                    
+                    订阅发布模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">性能</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../xing-neng/zhong-hui-yu-zhong-pai.html">
+            
+                <a href="../xing-neng/zhong-hui-yu-zhong-pai.html">
+            
+                    
+                    重绘与重排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <span>
+            
+                    
+                    渐进增强和优雅降级
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">浏览器兼容</li>
+        
+        
+    
+
+    
+        
+        <li class="header">安全</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" >
+            
+                <span>
+            
+                    
+                    XSS是什么
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">框架</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" >
+            
+                <span>
+            
+                    
+                    angularjs的核心概念
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" >
+            
+                <span>
+            
+                    
+                    vue的核心概念
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" >
+            
+                <span>
+            
+                    
+                    angular的核心概念
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" >
+            
+                <span>
+            
+                    
+                    react的核心概念
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工程化工具</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" >
+            
+                <span>
+            
+                    
+                    webpack是什么？
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" >
+            
+                <span>
+            
+                    
+                    webpack的原理
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" >
+            
+                <span>
+            
+                    
+                    你常去的网站？
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" >
+            
+                <span>
+            
+                    
+                    有没有女朋友？
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" >
+            
+                <span>
+            
+                    
+                    有没有男朋友？
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" >
+            
+                <span>
+            
+                    
+                    你的薪资期望？
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >深拷贝实现</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6DF1;&#x62F7;&#x8D1D;&#x5B9E;&#x73B0;">&#x6DF1;&#x62F7;&#x8D1D;&#x5B9E;&#x73B0;</h1>
+<p>js&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x548C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x4E5F;&#x53EB;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x8BF4;&#x6CD5;&#x5F88;&#x591A;&#xFF0C;&#x4F46;&#x662F;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x503C;&#x662F;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x7684;&#xFF0C;&#x6BCF;&#x6B21;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x8FD4;&#x56DE;&#x65B0;&#x7684;&#x503C;&#xFF0C;&#x539F;&#x59CB;&#x7684;&#x503C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x800C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x5219;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x6307;&#x5411;&#x7684;&#x662F;&#x5B58;&#x50A8;&#x503C;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x4F1A;&#x6539;&#x53D8;&#x8BE5;&#x5185;&#x5B58;&#x5730;&#x5740;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#x5374;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x6539;&#x53D8;&#xFF0C;&#x6240;&#x4EE5;&#x6709;&#x65F6;&#x5019;&#x5728;&#x4E1A;&#x52A1;&#x4E2D;&#x6211;&#x4EEC;&#x62FF;&#x5230;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x60F3;&#x8981;&#x4E00;&#x7CFB;&#x5217;&#x64CD;&#x4F5C;&#x4F46;&#x662F;&#x53C8;&#x4E0D;&#x60F3;&#x6C61;&#x67D3;&#x8FD9;&#x4E2A;&#xFF0C;&#x6DF1;&#x62F7;&#x8D1D;&#x5C31;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;</p>
+<p>&#x4E3E;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> people <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&apos;dahong&apos;</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> newPeople <span class="token operator">=</span> people<span class="token punctuation">;</span>
+
+newPeople<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">19</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>people<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 19}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newPeople<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 19}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x8D4B;&#x503C;&#x53EA;&#x662F;&#x5C06;&#x5185;&#x5B58;&#x5730;&#x5740;&#x548C;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x8FDB;&#x884C;&#x4E86;&#x7ED1;&#x5B9A;&#xFF0C;&#x7528;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x6765;&#x64CD;&#x4F5C;&#x5176;&#x5B58;&#x50A8;&#x7684;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x5F15;&#x7528;&#x4E86;&#x8BE5;&#x5185;&#x5B58;&#x5730;&#x5740;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x503C;&#x90FD;&#x662F;&#x4F1A;&#x53D8;&#x5316;&#x7684;&#xFF0C;&#x597D;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6765;&#x62F7;&#x8D1D;&#x4E00;&#x4EFD;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> people <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&apos;dahong&apos;</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> newPeople <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>people<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+newPeople<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">19</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>people<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 18}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newPeople<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 19}</span>
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;&#xFF0C;&#x64CD;&#x4F5C; newPeople &#x5E76;&#x4E0D;&#x4F1A;&#x6539;&#x53D8; people &#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x503C;&#xFF0C;&#x539F;&#x7406;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;<code>JSON.stringify</code> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x518D; <code>JSON.parse</code> &#x89E3;&#x6790;&#x6210;&#x5F15;&#x7528;&#x7C7B;&#x578B;</p>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#x4E5F;&#x6709;&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x5B58;&#x50A8;&#x7684;&#x503C;&#x4E2D;&#x6709; Function &#x5219;&#x4F1A;&#x4E22;&#x5931;</li>
+<li>&#x539F;&#x578B;&#x94FE;&#x4F1A;&#x4E22;&#x5931;</li>
+</ol>
+<pre class="language-"><code class="lang-js"><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&apos;dahong&apos;</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>doOne <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;doOne&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+fn<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token keyword">do</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;hello&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> people <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> newPeople <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>people<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+newPeople<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">19</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>people<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 18, doOne: &#x192;...}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newPeople<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// {name: &quot;dahong&quot;, age: 19}</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; shaodahong 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-10-10 01:24:06
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="yuan-xing-lian.md" class="navigation navigation-prev " aria-label="Previous page: 原型链">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="han-shu-ke-li-hua.md" class="navigation navigation-next " aria-label="Next page: 函数柯里化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"深拷贝实现","level":"4.4","depth":1,"next":{"title":"函数柯里化","level":"4.5","depth":1,"path":"js/han-shu-ke-li-hua.md","ref":"js/han-shu-ke-li-hua.md","articles":[]},"previous":{"title":"原型链","level":"4.3","depth":1,"path":"js/yuan-xing-lian.md","ref":"js/yuan-xing-lian.md","articles":[]},"dir":"ltr"},"config":{"plugins":["editlink","github","disqus","sitemap","prism","-highlight","github-buttons","tbfed-pagefooter","codeblock-filename"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy shaodahong 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"web-topic"},"github":{"url":"https://github.com/shaodahong/web-topic"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/shaodahong/web-topic/blob/master/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"codeblock-filename":{},"sitemap":{"hostname":"http://web-topic.baiya.me/"},"github-buttons":{"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shaodahong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WEB_TOPIC","language":"zh-hans","gitbook":"*","description":"前端面试题目合集"},"file":{"path":"js/shen-kao-bei-shi-xian.md","mtime":"2017-10-09T17:24:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-10T16:06:38.615Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

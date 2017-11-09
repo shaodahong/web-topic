@@ -1,6 +1,8 @@
 <h1 align="center">WEB-TOPIC</h1>
 <h4 align="center">面试如面壁，看清自己</h4>
 
+[![Build Status](https://travis-ci.org/shaodahong/web-topic.svg?branch=master)](https://travis-ci.org/shaodahong/web-topic)
+
 我的第一份工作是销售，印象深刻的记得我的经理告诉我说
 
 > 如果要客户知道你想表达什么，那么你要说出个123来，优先级递减。

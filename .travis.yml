@@ -4,13 +4,12 @@ branch:
   only:
   - master
 before_install:
-- npm install -g gitbook
+- npm install -g gitbook-cli
 install:
 - npm install
 script:
 - gitbook build . ./docs
 after_success:
-- cd ./public
 - git init
 - git config --global user.name 'shaodahong'
 - git config --global user.email 'darryshaw@gmail.com'

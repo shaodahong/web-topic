@@ -47,6 +47,7 @@
 
 ## HTTP
 
+* [http缓存](http/http-huan-cun.md)
 * [ajax实现](http/ajax-shi-xian.md)
 * [jsonp实现](http/jsonp-shi-xian.md)
 * https是什么
@@ -69,7 +70,7 @@
 ## 性能
 
 * [重绘与重排](xing-neng/zhong-hui-yu-zhong-pai.md)
-* 渐进增强和优雅降级
+* [渐进增强和优雅降级](xing-neng/jian-jin-zeng-qiang-he-you-ya-jiang-ji.md)
 
 ## 浏览器兼容
 

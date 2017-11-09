@@ -16,7 +16,7 @@ after_success:
 - git config --global user.email 'darryshaw@gmail.com'
 - git add .
 - git commit -m "generate static resources, triggerd by travis ci"
-- git push --force "https://wangming1993:${REPO_TOKEN}@${GH_REF}" master:master
+- git push --force "https://shaodahong:${REPO_TOKEN}@${GH_REF}" master:master
 env:
   global:
     - GH_REF: github.com/shaodahong/web-topic.git

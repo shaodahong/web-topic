@@ -4,9 +4,11 @@ branch:
   only:
   - master
 before_install:
-  - npm install -g gitbook
+- npm install -g gitbook
 install:
-  - npm install
+- npm install
+script:
+- gitbook build . ./docs
 after_success:
 - cd ./public
 - git init

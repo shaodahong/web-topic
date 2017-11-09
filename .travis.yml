@@ -8,6 +8,7 @@ before_install:
 install:
 - npm install
 script:
+- gitbook install
 - gitbook build . ./docs
 after_success:
 - git init

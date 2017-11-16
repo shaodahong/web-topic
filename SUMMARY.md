@@ -72,7 +72,8 @@
 * [重绘与重排](xing-neng/zhong-hui-yu-zhong-pai.md)
 * [渐进增强和优雅降级](xing-neng/jian-jin-zeng-qiang-he-you-ya-jiang-ji.md)
 
-## 浏览器兼容
+## 浏览器
+* [浏览器内核](liu-lan-qi/liu-lan-qi-nei-he.md)
 
 ## 安全
 

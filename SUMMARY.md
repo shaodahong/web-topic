@@ -51,7 +51,7 @@
 * [ajax实现](http/ajax-shi-xian.md)
 * [jsonp实现](http/jsonp-shi-xian.md)
 * [https是什么](http/htts-shi-shen-me.md)
-* 跨域的原理和实现
+* [跨域的原理和实现](http/kua-yu-de-yuan-li-he-shi-xian.md)
 * 三次握手四次挥手
 * [TCP和UDP的区别](http/tcp-he-udp-de-qu-bie.md)
 * 什么是Etag？

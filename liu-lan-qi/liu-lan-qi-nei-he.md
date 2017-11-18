@@ -12,8 +12,8 @@
 
 浏览器|内核|JS引擎
 -       |   -       |   -
-IE      |   Trident |   1  
-Chrome  |   Blink   |   2  
-FF      |   Gecko   |   3
-Safari  |   Webkit  |   3
-Opera   |   Presto  |   3
+IE      |   Trident |   Chakra
+Chrome  |   Blink   |   V8
+FF      |   Gecko   |   SpiderMonkey
+Safari  |   Webkit  |   JavaScriptCore
+Opera   |   Presto  |   Carakan

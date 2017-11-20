@@ -6,6 +6,7 @@
 
 ## 浏览器
 * [浏览器内核](liu-lan-qi/liu-lan-qi-nei-he.md)
+* [浏览器兼容](liu-lan-qi/liu-lan-qi-jian-rong.md)
 
 ## HTML
 

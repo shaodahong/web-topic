@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url> <loc>http://web-topic.baiya.me/./</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://web-topic.baiya.me/liu-lan-qi/liu-lan-qi-nei-he.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://web-topic.baiya.me/liu-lan-qi/liu-lan-qi-jian-rong.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://web-topic.baiya.me/html/html5-api.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://web-topic.baiya.me/css/chui-zhi-ju-zhong.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://web-topic.baiya.me/css/shui-ping-ju-zhong.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -19,4 +21,5 @@
 <url> <loc>http://web-topic.baiya.me/http/liu-lan-qi-di-zhi-hui-che.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://web-topic.baiya.me/she-ji-mo-shi/ding-yue-fa-bu-mo-shi.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://web-topic.baiya.me/xing-neng/zhong-hui-yu-zhong-pai.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://web-topic.baiya.me/other/ni-chang-qu-de-wang-zhan.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

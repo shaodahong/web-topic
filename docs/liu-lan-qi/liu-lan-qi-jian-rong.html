@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>FLEX布局 · WEB_TOPIC</title>
+        <title>浏览器兼容 · WEB_TOPIC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="fu-dong-he-qing-chu-fu-dong.md" />
+    <link rel="next" href="../html/html5-api.html" />
     
     
-    <link rel="prev" href="he-zi-mo-xing.html" />
+    <link rel="prev" href="liu-lan-qi-nei-he.html" />
     
 
     <style>
@@ -135,9 +135,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../liu-lan-qi/liu-lan-qi-nei-he.html">
+        <li class="chapter " data-level="2.1" data-path="liu-lan-qi-nei-he.html">
             
-                <a href="../liu-lan-qi/liu-lan-qi-nei-he.html">
+                <a href="liu-lan-qi-nei-he.html">
             
                     
                     浏览器内核
@@ -148,9 +148,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../liu-lan-qi/liu-lan-qi-jian-rong.html">
+        <li class="chapter active" data-level="2.2" data-path="liu-lan-qi-jian-rong.html">
             
-                <a href="../liu-lan-qi/liu-lan-qi-jian-rong.html">
+                <a href="liu-lan-qi-jian-rong.html">
             
                     
                     浏览器兼容
@@ -188,9 +188,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="chui-zhi-ju-zhong.html">
+        <li class="chapter " data-level="4.1" data-path="../css/chui-zhi-ju-zhong.html">
             
-                <a href="chui-zhi-ju-zhong.html">
+                <a href="../css/chui-zhi-ju-zhong.html">
             
                     
                     垂直居中
@@ -201,9 +201,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="shui-ping-ju-zhong.html">
+        <li class="chapter " data-level="4.2" data-path="../css/shui-ping-ju-zhong.html">
             
-                <a href="shui-ping-ju-zhong.html">
+                <a href="../css/shui-ping-ju-zhong.html">
             
                     
                     水平居中
@@ -214,9 +214,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="he-zi-mo-xing.html">
+        <li class="chapter " data-level="4.3" data-path="../css/he-zi-mo-xing.html">
             
-                <a href="he-zi-mo-xing.html">
+                <a href="../css/he-zi-mo-xing.html">
             
                     
                     盒子模型
@@ -227,9 +227,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.4" data-path="flex-bu-ju.html">
+        <li class="chapter " data-level="4.4" data-path="../css/flex-bu-ju.html">
             
-                <a href="flex-bu-ju.html">
+                <a href="../css/flex-bu-ju.html">
             
                     
                     FLEX布局
@@ -240,7 +240,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="fu-dong-he-qing-chu-fu-dong.md">
+        <li class="chapter " data-level="4.5" data-path="../css/fu-dong-he-qing-chu-fu-dong.md">
             
                 <span>
             
@@ -1022,7 +1022,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >FLEX布局</a>
+        <a href=".." >浏览器兼容</a>
     </h1>
 </div>
 
@@ -1037,60 +1037,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="flex&#x5E03;&#x5C40;">FLEX&#x5E03;&#x5C40;</h1>
-<p align="center">
-    <img src="../assets/flexbox.png">
-</p>
-
-<p>&#x7F51;&#x9875;&#x5E03;&#x5C40;&#x662F;&#x6BCF;&#x4E2A;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x4F1A;&#x9762;&#x5BF9;&#x7684;&#xFF0C;&#x4F20;&#x7EDF;&#x7684;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;&#x6211;&#x4EEC;&#x5F80;&#x5F80;&#x4F1A;&#x91C7;&#x7528; <code>display</code> <code>position</code> <code>float</code> &#x8FD9;&#x4E9B; css &#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x9762;&#x5BF9;&#x65E5;&#x76CA;&#x589E;&#x591A;&#x4E14;&#x5C3A;&#x5BF8;&#x5DEE;&#x5F02;&#x660E;&#x663E;&#x7684;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x8FD9;&#x4E9B; css &#x5C5E;&#x6027;&#x7ED9;&#x6211;&#x4EEC;&#x5E26;&#x6765;&#x4E86;&#x5F88;&#x591A;&#x7834;&#x574F;&#x6027;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x73A9;&#x73A9;&#x6709;&#x4E9B;&#x7528;&#x6237;&#x7684;&#x624B;&#x673A;&#x4E0A;&#x5E03;&#x5C40;&#x662F;&#x597D;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x53E6;&#x5916;&#x4E00;&#x4E9B;&#x5374;&#x662F;&#x574F;&#x7684;&#xFF0C;&#x6240;&#x4EE5; flex &#x5E03;&#x5C40;&#x4E5F;&#x547C;&#x4E4B;&#x65E2;&#x51FA;</p>
-<p>flex &#x5E03;&#x5C40;&#x4E5F;&#x53EB; <strong>&#x5F39;&#x6027;&#x5E03;&#x5C40;</strong>&#xFF0C;&#x4F53;&#x73B0;&#x5728;&#x5B83;&#x80FD;&#x591F;&#x81EA;&#x52A8;&#x7684;&#x4F38;&#x7F29;&#x6765;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x9875;&#x9762;&#x5C3A;&#x5BF8;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x8981;&#x5B8C;&#x6210;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5E03;&#x5C40;&#xFF1A;</p>
-<p align="center">
-    <img src="../assets/flex1.png">
-</p>
-
-<p>flex &#x5F88;&#x7B80;&#x5355;&#x7684;&#x5C31;&#x80FD;&#x5E2E;&#x6211;&#x4EEC;&#x641E;&#x5B9A;&#x4ED6;,&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x544A;&#x8BC9;&#x7236;&#x76D2;&#x5B50;&#x4F60;&#x662F;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#xFF08;<code>display: flex</code>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x544A;&#x8BC9;&#x5B50;&#x5143;&#x7D20;&#x4F60;&#x4EEC;&#x5728;&#x76D2;&#x5B50;&#x4E2D;&#x6BCF;&#x4E2A;&#x4EBA;&#x53EA;&#x5360;&#x4E86;&#x4E00;&#x7B49;&#x4EFD;&#xFF08;<code>flex: 1</code>&#xFF09;&#x5462;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x5143;&#x7D20;&#x5C31;&#x4F1A;&#x8001;&#x8001;&#x5B9E;&#x5B9E;&#x7684;&#x5360;&#x636E;&#x7740;&#x5C5E;&#x4E8E;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;</p>
-<p>html:</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>father<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>child1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x76D2;&#x5B50;1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>child2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x76D2;&#x5B50;2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>child3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x76D2;&#x5B50;3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <h1 id="&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;">&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;</h1>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x5E38;&#x89C1;&#x7684;&#x517C;&#x5BB9;&#x5F80;&#x5F80;&#x662F; DOM &#x64CD;&#x4F5C;&#x548C; CSS &#x7684;&#x8868;&#x73B0;&#x4E0A;&#xFF0C;CSS &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x52A0;&#x4E0A;&#x5382;&#x5546;&#x7684;&#x524D;&#x7F00;&#x6765;&#x5F97;&#x5230;&#x652F;&#x6301;&#xFF0C;DOM &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#x7684;&#x6709;&#x65E0;&#x6765;&#x50CF;&#x4E0B;&#x517C;&#x5BB9;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x8981;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x539F;&#x751F; JS &#x5C31;&#x6709;&#x65B9;&#x6CD5;&#x6765;&#x652F;&#x6301;</p>
+<pre class="language-"><code class="lang-js">element<span class="token punctuation">.</span>children
 </code></pre>
-<p>css:</p>
-<pre class="language-"><code class="lang-css"><span class="token selector">.father</span> <span class="token punctuation">{</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #b3b3b3<span class="token punctuation">;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">.father &gt; div</span> <span class="token punctuation">{</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #1C90F3<span class="token punctuation">;</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-  <span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x4F1A;&#x6709;&#x4EBA;&#x8BF4;&#x8FD9;&#x4E2A;&#x4E0D;&#x884C;&#xFF0C;&#x592A;&#x7B80;&#x5355;&#x4E86;&#xFF0C;&#x6211;&#x4E00;&#x4E2A;<code>width: 33.3%</code>&#x5C31;&#x80FD;&#x641E;&#x5B9A;&#xFF0C;&#x8BDA;&#x7136;&#xFF0C;&#x8FD9;&#x6837;&#x786E;&#x5B9E;&#x80FD;&#x591F;&#x5B8C;&#x6210;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x8BD5;&#x628A; <code>.child3</code> &#x7684;<code>flex</code>&#x5C5E;&#x6027;&#x53D8;&#x6210;2&#x770B;&#x770B;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1A;</p>
-<p align="center">
-    <img src="../assets/flex2.png">
-</p>
-
-<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x795E;&#x5947;&#xFF0C;<code>.child3</code>&#x81EA;&#x52A8;&#x5360;&#x636E;&#x4E86;&#x76D2;&#x5B50;&#x7684;2&#x7B49;&#x4EFD;</p>
-<p>&#x5728; flex &#x5E03;&#x5C40;&#x4E2D;&#x6709;&#x884C;&#xFF08;row&#xFF09;&#x548C;&#x5217;&#xFF08;column&#xFF09;&#x4E4B;&#x5206;&#xFF0C;&#x8FD9;&#x4E5F;&#x51B3;&#x5B9A;&#x4E86;&#x76D2;&#x5B50;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4F1A;&#x53D7;&#x5230;&#x5143;&#x7D20;&#x7684; dir &#x5C5E;&#x6027;&#x5F71;&#x54CD;:</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">dir</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ltr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   // left to right
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">dir</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>rtl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   // right to left
-</code></pre>
-<p>flex &#x4E5F;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8BBE;&#x5B9A;&#x5E03;&#x5C40;&#x7684;&#x65B9;&#x5411;</p>
-<pre class="language-"><code class="lang-css"><span class="token property">flex-direction</span><span class="token punctuation">:</span> row | row-reverse | column | column-reverse
-</code></pre>
-<p>&#x9ED8;&#x8BA4;&#x662F;&#x6C34;&#x5E73;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6765;&#x6392;&#x5217;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x5782;&#x76F4;&#x6392;&#x5217;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;&#x7ED9;&#x6211;&#x4EEC;&#x5E26;&#x6765;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x4FBF;&#x5229;&#x6027;</p>
-<p align="center">
-    <img src="../assets/flex3.png">
-</p>
-
-
+<p>&#x4F46;&#x662F; <code>children</code> &#x53EA;&#x652F;&#x6301; IE9 &#x53CA;&#x4EE5;&#x4E0A;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x517C;&#x5BB9;&#x5B83;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x7528; <code>childNodes</code>&#xFF0C;&#x4F46;&#x662F; <code>childNodes</code> &#x8FD4;&#x56DE;&#x7684;&#x5E76;&#x4E0D;&#x662F;&#x5143;&#x7D20;&#x800C;&#x662F;&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5728;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x4E2D;&#x7B5B;&#x9009;&#x51FA; <code>nodeType</code> &#x4E3A;1&#x7684;&#x8282;&#x70B9;</p>
+<p>&#x5E38;&#x89C1;&#x7684; DOM &#x517C;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><code>children</code></li>
+<li><code>firstElementChild</code></li>
+<li><code>innerText</code> (&#x4F4E;&#x7248;&#x672C;&#x7684; FF &#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301; <code>innerText</code> &#x4F46;&#x662F;&#x652F;&#x6301; <code>textContent</code>)</li>
+</ul>
+<p>&#x5E38;&#x89C1;&#x7684; CSS &#x517C;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><code>opacity</code> (IE9 &#x4EE5;&#x4E0B;&#x7684;&#x6D4F;&#x89C8;&#x5668; <code>filter: alpha(opacity=xx)</code> )</li>
+<li><code>&#x76D2;&#x5B50;&#x6A21;&#x578B;</code></li>
+</ul>
+<p>CSS &#x7684;&#x517C;&#x5BB9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; hack &#x5199;&#x6CD5;&#xFF08;&#x6211;&#x6CA1;&#x5199;&#x8FC7;&#xFF09;&#x548C;&#x52A0;&#x6D4F;&#x89C8;&#x5668;&#x5382;&#x5546;&#x524D;&#x7F00;&#x6765;&#x652F;&#x6301;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x6F14;&#x793A;&#x6765;&#x5C3D;&#x91CF;&#x89C4;&#x907F;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x7684;&#x5DEE;&#x5F02;&#x5316;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6D4F;&#x89C8;&#x5668;</th>
+<th>&#x524D;&#x7F00;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>google/Safari</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>-moz-</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>-o-</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>-ms-</td>
+</tr>
+</tbody>
+</table>
+<p>JS &#x6709; jQuery &#x5E93;&#x53EF;&#x4EE5;&#x6765;&#x5B9E;&#x73B0;&#x89C4;&#x907F;&#x517C;&#x5BB9;&#x5199;&#x6CD5;</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; shaodahong 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2017-10-03 09:21:28
+2017-11-20 14:26:23
 </span></footer>
                                 
                                 </section>
@@ -1118,12 +1110,12 @@
 
             
                 
-                <a href="he-zi-mo-xing.html" class="navigation navigation-prev " aria-label="Previous page: 盒子模型">
+                <a href="liu-lan-qi-nei-he.html" class="navigation navigation-prev " aria-label="Previous page: 浏览器内核">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="fu-dong-he-qing-chu-fu-dong.md" class="navigation navigation-next " aria-label="Next page: 浮动和清除浮动">
+                <a href="../html/html5-api.html" class="navigation navigation-next " aria-label="Next page: HTML5 API">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1134,7 +1126,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FLEX布局","level":"4.4","depth":1,"next":{"title":"浮动和清除浮动","level":"4.5","depth":1,"path":"css/fu-dong-he-qing-chu-fu-dong.md","ref":"css/fu-dong-he-qing-chu-fu-dong.md","articles":[]},"previous":{"title":"盒子模型","level":"4.3","depth":1,"path":"css/he-zi-mo-xing.md","ref":"css/he-zi-mo-xing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["editlink","github","disqus","sitemap","prism","-highlight","github-buttons","tbfed-pagefooter","codeblock-filename"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy shaodahong 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"web-topic"},"github":{"url":"https://github.com/shaodahong/web-topic"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/shaodahong/web-topic/blob/master/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"codeblock-filename":{},"sitemap":{"hostname":"http://web-topic.baiya.me/"},"github-buttons":{"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shaodahong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WEB_TOPIC","language":"zh-hans","gitbook":"*","description":"前端面试题目合集"},"file":{"path":"css/flex-bu-ju.md","mtime":"2017-10-03T01:21:28.354Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-20T06:27:26.183Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"浏览器兼容","level":"2.2","depth":1,"next":{"title":"HTML5 API","level":"3.1","depth":1,"path":"html/html5-api.md","ref":"html/html5-api.md","articles":[]},"previous":{"title":"浏览器内核","level":"2.1","depth":1,"path":"liu-lan-qi/liu-lan-qi-nei-he.md","ref":"liu-lan-qi/liu-lan-qi-nei-he.md","articles":[]},"dir":"ltr"},"config":{"plugins":["editlink","github","disqus","sitemap","prism","-highlight","github-buttons","tbfed-pagefooter","codeblock-filename"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy shaodahong 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"web-topic"},"github":{"url":"https://github.com/shaodahong/web-topic"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/shaodahong/web-topic/blob/master/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"codeblock-filename":{},"sitemap":{"hostname":"http://web-topic.baiya.me/"},"github-buttons":{"repo":"shaodahong/web-topic","types":["star","watch","fork"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shaodahong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WEB_TOPIC","language":"zh-hans","gitbook":"*","description":"前端面试题目合集"},"file":{"path":"liu-lan-qi/liu-lan-qi-jian-rong.md","mtime":"2017-11-20T06:26:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-20T06:27:26.183Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

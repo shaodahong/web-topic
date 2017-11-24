@@ -39,4 +39,4 @@
         - FIN - Finish 的英文缩写，表示关闭连接
         - seq - Sequence Number 的英文缩写，表示序号
         - ack - Acknowledgment Number 的英文缩写，表示确认号
-        - TCP 会话的每一段都会包含 seq，seq 初始是随机的，ack 是已经成功接收到的数据字节序号 + 1，
+        - TCP 会话的每一段都会包含 seq，seq 初始是随机的，ack 是已经成功接收到的数据字节序号 + 1，换个角度 ack 就是下次要接收数据的 seq

@@ -60,7 +60,6 @@
 * 三次握手四次挥手
 * [TCP和UDP的区别](http/tcp-he-udp-de-qu-bie.md)
 * 什么是Etag？
-* [当你在浏览器中输入 google.com 并且按下回车之后发生了什么？](http/liu-lan-qi-di-zhi-hui-che.md)
 
 ## 设计模式
 

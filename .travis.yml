@@ -12,11 +12,12 @@ script:
 - gitbook build . ./docs
 after_success:
 - git init
-- git config --global user.name 'shaodahong'
-- git config --global user.email 'darryshaw@gmail.com'
+- git config user.name "shaodahong"
+- git config user.email "darryshaw@gmail.com"
 - git add .
-- git commit -m "generate static resources, triggerd by travis ci"
-- git push --force "https://${REPO_TOKEN}@${GH_REF}" master:master
+- git commit -m "Update docs"
+- git push -f "https://${GH_TOKEN}@${GH_REF}" master
 env:
   global:
     - GH_REF: github.com/shaodahong/web-topic.git
+    - secure: "mIdQVtvkOnHd49NBR1Jn0R0/sdLtnsNrgJ4IPxdyTHEvw9aZ1S6S5YMP4kvFmgX2UPhoaVcMuEiIInIPIZQi/xxj6eTBcNpHriJTITO131cRIVeICG5QPs+LN7iTRMqg20hxLlSBESydBP/eftTmDdQ7kqJIX9/fuMPJq7gQ6ESdyOjLov9jppCfzShYon9q6jlsZIuOaat8uqHfEH2WBnNjONX0AyvSMRVyynS3TKysfEXd9LUmAyWmTdpwnCtwRkOaCZ/Tng7+USlxr2xvtXeRtBrWxi+BFpLHoLuLpggSnsv/pN9rwL5liZI4c0iRxlE0qWKZtcV/F6lsUuz9+zSrNFBv0zPNzdbaGhTbnmxk4mFlJskSGndpngU+mYW2Xw/4E1NCFHZ6CLG8SV/mQVn2SWjmYWwQJMBF8IlIVMvK5pghEwpiQDGIDzOwZv6ipmTC9QaNfLHWB2JBUc4gdLSMarge/BWaff6eFnHrDf/gagnvMFkaivBv3lGqXcHjt77qOhmmshkfMkMYQbed8xzBh5W/6UYz+TBpKQai/FDIBd2m3I6ADplkVY4Qb+rSX7A/eKoROP5NpndhPJ5nblrWCvum1dSmy8Ud3WsMW1NqtcGaWoF0Bs6HopyyAimGU6rEnJ0CTacY33P90wWxBhlc6UIJ9/aZjfSmt79aJKw="

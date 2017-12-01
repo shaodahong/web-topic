@@ -14,6 +14,7 @@
     + 解析 url 步骤会转化非 ASCII 字符
     + Chrome HSTS list 查看：地址栏输入 `chrome://net-internals/#hsts`
     + 不在 HSTS list 中也可以通过设置请求头来实现 HSTS 访问: `add_header Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;`
+
 4. 开始解析域名，也就是常说的 DNS，DNS 做过网站的朋友应该是知道的，网站是要买域名的，但是网络根本不知道你的域名和服务器对应关系，所以一般买完域名要域名解析，让网络知道 aaa.com->10.10.10.10，域名其实相当于 alias，我们想要找到目标服务器只能通过 ip，所以会先检查浏览器的 DNS 缓存，如果找到了直接拿到 ip 访问网站，如果没有，去系统缓存中查找，没找到会去你的路由缓存或者 ISP 服务商缓存中找，如果还没找到，去根域名服务器进行递归搜索
     + Chrome DNS 缓存: `chrome://net-internals/#dns`
     + 系统缓存包括 hosts 文件，hosts 每个系统存放的位置是不同的，但是打开都能看到一个域名和 ip 对应关系，也可以自己设置，开发人员应该很熟悉了

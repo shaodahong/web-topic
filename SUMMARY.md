@@ -82,7 +82,7 @@
 ## 框架
 
 * [angularjs的核心概念](kuang-jia/angularjs-de-he-xin-gai-lian.md)
-* vue的核心概念
+* [vue的核心概念](kuang-jia/vue-de-he-xin-gai-lian.md)
 * angular的核心概念
 * react的核心概念
 
